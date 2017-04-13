@@ -1,0 +1,7 @@
+E:\GitHub\MUINetPlus\Code\MUINetPlus.Core\bin\Debug\MUINetPlus.Core.dll
+E:\GitHub\MUINetPlus\Code\MUINetPlus.Core\bin\Debug\MUINetPlus.Core.pdb
+E:\GitHub\MUINetPlus\Code\MUINetPlus.Core\obj\Debug\MUINetPlus.Core.dll
+E:\GitHub\MUINetPlus\Code\MUINetPlus.Core\obj\Debug\MUINetPlus.Core.pdb
+E:\GitHub\MUINetPlus\bin\MUINetPlus.Core.dll
+E:\GitHub\MUINetPlus\bin\MUINetPlus.Core.pdb
+E:\GitHub\MUINetPlus\Code\MUINetPlus.Core\obj\Debug\MUINetPlus.Core.csprojResolveAssemblyReference.cache

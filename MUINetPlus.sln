@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MUINetPlus.Core", "MUINetPlus.Core", "{0E695F57-A86F-4F3B-9910-5BE0BBF61270}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MUINetPlus.Plugin", "MUINetPlus.Plugin", "{07A75FE7-015B-4FEC-BD9C-9F7DA89ADC7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MUINetPlus.Startup", "Code\MUINetPlus.Startup\MUINetPlus.Startup.csproj", "{A95E1A7B-A983-4FBA-BC14-D6BDB5054354}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MUINetPlus.Core", "Code\MUINetPlus.Core\MUINetPlus.Core.csproj", "{8EB2BE99-A893-45D6-A043-4A4A0AD65ABE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MUINetPlus.Core.UI", "Code\MUINetPlus.Core.UI\MUINetPlus.Core.UI.csproj", "{5488BBB2-59BA-4F45-B073-5DC426432581}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MUINetPlus.MainPlugin", "Code\MUINetPlus.MainPlugin\MUINetPlus.MainPlugin.csproj", "{DC5E146E-5BC6-4904-8A6D-9D0C1EE2CE89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstFloor.ModernUI", "Library\FirstFloor.ModernUI\FirstFloor.ModernUI.csproj", "{BAE311FE-965E-434D-8E9F-02E35A3D1D25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A95E1A7B-A983-4FBA-BC14-D6BDB5054354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A95E1A7B-A983-4FBA-BC14-D6BDB5054354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A95E1A7B-A983-4FBA-BC14-D6BDB5054354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A95E1A7B-A983-4FBA-BC14-D6BDB5054354}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EB2BE99-A893-45D6-A043-4A4A0AD65ABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EB2BE99-A893-45D6-A043-4A4A0AD65ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EB2BE99-A893-45D6-A043-4A4A0AD65ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EB2BE99-A893-45D6-A043-4A4A0AD65ABE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5488BBB2-59BA-4F45-B073-5DC426432581}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5488BBB2-59BA-4F45-B073-5DC426432581}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5488BBB2-59BA-4F45-B073-5DC426432581}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5488BBB2-59BA-4F45-B073-5DC426432581}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC5E146E-5BC6-4904-8A6D-9D0C1EE2CE89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC5E146E-5BC6-4904-8A6D-9D0C1EE2CE89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC5E146E-5BC6-4904-8A6D-9D0C1EE2CE89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC5E146E-5BC6-4904-8A6D-9D0C1EE2CE89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAE311FE-965E-434D-8E9F-02E35A3D1D25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAE311FE-965E-434D-8E9F-02E35A3D1D25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAE311FE-965E-434D-8E9F-02E35A3D1D25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAE311FE-965E-434D-8E9F-02E35A3D1D25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8EB2BE99-A893-45D6-A043-4A4A0AD65ABE} = {0E695F57-A86F-4F3B-9910-5BE0BBF61270}
+		{5488BBB2-59BA-4F45-B073-5DC426432581} = {0E695F57-A86F-4F3B-9910-5BE0BBF61270}
+		{DC5E146E-5BC6-4904-8A6D-9D0C1EE2CE89} = {07A75FE7-015B-4FEC-BD9C-9F7DA89ADC7C}
+		{BAE311FE-965E-434D-8E9F-02E35A3D1D25} = {0E695F57-A86F-4F3B-9910-5BE0BBF61270}
+	EndGlobalSection
+EndGlobal

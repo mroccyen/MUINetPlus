@@ -1,0 +1,17 @@
+﻿<Plugin  Name="MainConfig" Author="mroccyen" Version="1.0.0" Description="" Initialized="true">
+  <!--<Extension Type="LinkPage" Assembly="bin\QYCQ.AMS.dll">
+    <LinkPage Name="LoginPage" Index="0" Value="QYCQ.AMS.LoginWindow"/>
+    <LinkPage Name="MainPage"  Index="1" Value="QYCQ.AMS.MainWindow" />
+  </Extension>-->
+
+  <Extension Type="LinkGroup"  Assembly="MUINetPlus.MainPlugin.dll">
+    <LinkGroup Name="Project" Index="1" DisplayName="项目管理" DefaultContentSourceName="0" IsTitleLink="false">
+      <Link Name="0" Index="0" DisplayName="项目设定" Source="MUINetPlus.MainPlugin.TestUserControl"></Link>
+      <Link Name="1" Index="1" DisplayName="新建项目" Source="MUINetPlus.MainPlugin.TestUserControl1"></Link>
+    </LinkGroup>
+    <LinkGroup Name="Debug" Index="0" DisplayName="调试管理" DefaultContentSourceName="0" IsTitleLink="false">
+      <Link Name="0" Index="0" DisplayName="项目设定" Source="MUINetPlus.MainPlugin.TestUserControl2"></Link>
+      <Link Name="1" Index="1" DisplayName="新建项目" Source="MUINetPlus.MainPlugin.TestUserControl1"></Link>
+    </LinkGroup>
+  </Extension>
+</Plugin>

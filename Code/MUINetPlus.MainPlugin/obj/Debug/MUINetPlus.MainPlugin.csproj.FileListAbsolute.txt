@@ -1,0 +1,14 @@
+E:\GitHub\MUINetPlus\bin\Plugins\MainPlugin\MUINetPlus.MainPlugin.dll
+E:\GitHub\MUINetPlus\bin\Plugins\MainPlugin\MUINetPlus.MainPlugin.pdb
+E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\MUINetPlus.MainPlugin.dll
+E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\MUINetPlus.MainPlugin.pdb
+E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\MUINetPlus.MainPlugin.csprojResolveAssemblyReference.cache
+E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\TestUserControl.g.cs
+E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\TestUserControl1.g.cs
+E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\TestUserControl2.g.cs
+E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\MUINetPlus.MainPlugin_MarkupCompile.cache
+E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\MUINetPlus.MainPlugin_MarkupCompile.lref
+E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\TestUserControl.baml
+E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\TestUserControl1.baml
+E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\TestUserControl2.baml
+E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\MUINetPlus.MainPlugin.g.resources

@@ -1,0 +1,17 @@
+E:\GitHub\MUINetPlus\Code\MUINetPlus.Core.UI\bin\Debug\MUINetPlus.Core.UI.dll
+E:\GitHub\MUINetPlus\Code\MUINetPlus.Core.UI\bin\Debug\MUINetPlus.Core.UI.pdb
+E:\GitHub\MUINetPlus\Code\MUINetPlus.Core.UI\obj\Debug\MUINetPlus.Core.UI.csprojResolveAssemblyReference.cache
+E:\GitHub\MUINetPlus\Code\MUINetPlus.Core.UI\obj\Debug\MUINetPlus.Core.UI_MarkupCompile.cache
+E:\GitHub\MUINetPlus\Code\MUINetPlus.Core.UI\obj\Debug\MUINetPlus.Core.UI.g.resources
+E:\GitHub\MUINetPlus\Code\MUINetPlus.Core.UI\obj\Debug\MUINetPlus.Core.UI.Properties.Resources.resources
+E:\GitHub\MUINetPlus\Code\MUINetPlus.Core.UI\obj\Debug\MUINetPlus.Core.UI.csproj.GenerateResource.Cache
+E:\GitHub\MUINetPlus\Code\MUINetPlus.Core.UI\obj\Debug\MUINetPlus.Core.UI.dll
+E:\GitHub\MUINetPlus\Code\MUINetPlus.Core.UI\obj\Debug\MUINetPlus.Core.UI.pdb
+E:\GitHub\MUINetPlus\Code\MUINetPlus.Core.UI\bin\Debug\FirstFloor.ModernUI.dll
+E:\GitHub\MUINetPlus\Code\MUINetPlus.Core.UI\bin\Debug\Microsoft.Windows.Shell.dll
+E:\GitHub\MUINetPlus\Code\MUINetPlus.Core.UI\bin\Debug\FirstFloor.ModernUI.pdb
+E:\GitHub\MUINetPlus\Code\MUINetPlus.Core.UI\bin\Debug\FirstFloor.ModernUI.xml
+E:\GitHub\MUINetPlus\bin\MUINetPlus.Core.UI.dll
+E:\GitHub\MUINetPlus\bin\MUINetPlus.Core.UI.pdb
+E:\GitHub\MUINetPlus\Code\MUINetPlus.Core.UI\obj\Debug\Src\MainWindow\MainWindow.baml
+E:\GitHub\MUINetPlus\Code\MUINetPlus.Core.UI\obj\Debug\Src\MainWindow\MainWindow.g.cs

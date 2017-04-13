@@ -1,0 +1,129 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Windows;
+using UIShell.OSGi;
+
+namespace FirstFloor.ModernUI.Windows
+{
+    /// <summary>
+    /// Loads XAML files using Application.LoadComponent.
+    /// </summary>
+    public class DefaultContentLoader
+        : IContentLoader
+    {
+        /// <summary>
+        /// Default.
+        /// </summary>
+        public DefaultContentLoader()
+        {
+        }
+
+        private IBundle _bundle;
+        /// <summary>
+        /// Bundle.
+        /// </summary>
+        public IBundle Bundle
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(_bundleSymbolicName))
+                {
+                    return null;
+                }
+
+                if (_bundle == null)
+                {
+                    _bundle = BundleRuntime.Instance.Framework.Bundles.GetBundleBySymbolicName(BundleSymbolicName);
+                    if (_bundle == null)
+                    {
+                        throw new Exception(string.Format("The bunde '{0}' does not exist.", _bundleSymbolicName));
+                    }
+                }
+                return _bundle;
+            }
+        }
+        private string _bundleSymbolicName;
+        /// <summary>
+        /// Bundle SymbolicName.
+        /// </summary>
+        public string BundleSymbolicName
+        {
+            set
+            {
+                _bundleSymbolicName = value;
+                _bundle = null;
+            }
+            get
+            {
+                return _bundleSymbolicName;
+            }
+        }
+        
+        /// <summary>
+        /// Asynchronously loads content from specified uri.
+        /// </summary>
+        /// <param name="uri">The content uri.</param>
+        /// <param name="cancellationToken">The token used to cancel the load content task.</param>
+        /// <returns>The loaded content.</returns>
+        public Task<object> LoadContentAsync(Uri uri, CancellationToken cancellationToken)
+        {
+            if (!Application.Current.Dispatcher.CheckAccess()) {
+               throw new InvalidOperationException(Resources.UIThreadRequired);
+            }
+            
+            // scheduler ensures LoadContent is executed on the current UI thread
+            var scheduler = TaskScheduler.FromCurrentSynchronizationContext();
+            return Task.Factory.StartNew(() => LoadContent(uri), cancellationToken, TaskCreationOptions.None, scheduler);
+        }
+
+        /// <summary>
+        /// Loads the content from specified uri.
+        /// </summary>
+        /// <param name="uri">The content uri</param>
+        /// <returns>The loaded content.</returns>
+        protected virtual object LoadContent(Uri uri)
+        {
+            // don't do anything in design mode
+            if (ModernUIHelper.IsInDesignMode)
+            {
+                return null;
+            }
+            
+            // 1st Format: [BundleSymbolicName]@[Class Full Name]
+            if (uri.OriginalString.Contains('@'))
+            {
+                var bundleSymbolicNameAndClass = uri.OriginalString.Split('@');
+                if (bundleSymbolicNameAndClass.Length != 2 || string.IsNullOrEmpty(bundleSymbolicNameAndClass[0]) || string.IsNullOrEmpty(bundleSymbolicNameAndClass[1]))
+                {
+                    throw new Exception("The uri must be in format of '[BundleSymbolicName]@[Class Full Name]'");
+                }
+                var bundle = BundleRuntime.Instance.Framework.Bundles.GetBundleBySymbolicName(bundleSymbolicNameAndClass[0]);
+                if(bundle == null)
+                {
+                    throw new Exception(string.Format("The uri is not correct since the bunde '{0}' does not exist.", bundleSymbolicNameAndClass[0]));
+                }
+                var type = bundle.LoadClass(bundleSymbolicNameAndClass[1]);
+                if(type == null)
+                {
+                    throw new Exception(string.Format("The class '{0}' is not found in bunle '{1}'.", bundleSymbolicNameAndClass[1], bundleSymbolicNameAndClass[0]));
+                }
+                return Activator.CreateInstance(type);
+            }
+            else if (!uri.OriginalString.ToLower().Contains(".xaml") && !uri.OriginalString.Contains("/") && !uri.OriginalString.Contains(@"\") && Bundle != null)
+            {
+                var type = Bundle.LoadClass(uri.OriginalString);
+                if (type == null)
+                {
+                    throw new Exception(string.Format("The class '{0}' is not found in bunle '{1}'.", uri.OriginalString, BundleSymbolicName));
+                }
+                return Activator.CreateInstance(type);
+            }
+            // 2nd Format: /[AssemblyName],Version=[Version];component/[XAML relative path]
+            return Application.LoadComponent(uri);
+        }
+    }
+}
