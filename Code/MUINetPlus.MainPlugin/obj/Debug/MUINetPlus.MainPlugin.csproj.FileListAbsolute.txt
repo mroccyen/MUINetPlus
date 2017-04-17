@@ -12,3 +12,9 @@ E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\TestUserControl.baml
 E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\TestUserControl1.baml
 E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\TestUserControl2.baml
 E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\MUINetPlus.MainPlugin.g.resources
+E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\TestUserControl3.g.cs
+E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\TestUserControl3.baml
+E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\TestUserControl4.g.cs
+E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\TestUserControl5.g.cs
+E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\TestUserControl4.baml
+E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\TestUserControl5.baml

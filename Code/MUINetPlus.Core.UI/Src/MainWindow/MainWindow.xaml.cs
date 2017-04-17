@@ -14,7 +14,7 @@ namespace MUINetPlus.Core.UI
             InitializeComponent();
             XmlManager.SetupPlugin();
             Uri contentSource = null;
-            AppSetup.Setup(MenuLinkGroups, ref contentSource);
+            AppSetup.Setup(MenuLinkGroups, TitleLinks, ref contentSource);
             ContentSource = contentSource;
         }
     }

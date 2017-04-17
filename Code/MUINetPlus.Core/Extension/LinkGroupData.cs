@@ -18,12 +18,12 @@ namespace MUINetPlus.Core
             get; set;
         }
 
-        public string DefaultContentSourceName
+        public string GroupKey
         {
             get; set;
         }
 
-        public string IsTitleLink
+        public bool IsTitleLink
         {
             get; set;
         }

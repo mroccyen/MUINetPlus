@@ -8,10 +8,10 @@ namespace MUINetPlus.Core
 {
     public class ExtensionCheck
     {
-        public static T LinkGroupExistValue<T>(ExtensionData extensionData, string checkName) where T : ExtensionChildData
+        public static T LinkGroupExistValue<T>(ExtensionData extensionData, Func<ExtensionChildData, bool> funcWhere) where T : ExtensionChildData
         {
             T result = null; ;
-            var existNodes = extensionData.ExtensionNodes.Where(node => node.Name.Equals(checkName));
+            var existNodes = extensionData.ExtensionNodes.Where(funcWhere);
             if (existNodes.Count() > 0)
             {
                 foreach (var data in existNodes)

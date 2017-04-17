@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml;
 
 namespace MUINetPlus.Core
@@ -19,7 +15,21 @@ namespace MUINetPlus.Core
                 }
                 if (reader.NodeType == XmlNodeType.Element && reader.IsStartElement() && reader.LocalName.Equals("LinkGroup"))
                 {
-                    var existValue = ExtensionCheck.LinkGroupExistValue<LinkGroupData>(extension, reader.GetAttribute("Name"));
+                    var existValue = ExtensionCheck.LinkGroupExistValue<LinkGroupData>
+                        (
+                            extension,
+                            node =>
+                            {
+                                var n = node as LinkGroupData;
+                                if (n != null)
+                                {
+                                    var name = reader.GetAttribute("Name");
+                                    var groupKey = reader.GetAttribute("GroupKey") ?? string.Empty;
+                                    return n.Name.Equals(name) && n.GroupKey.Equals(groupKey);
+                                }
+                                return false;
+                            }
+                        );
                     XmlLink link = new XmlLink();
                     if (existValue == null)
                     {
@@ -27,8 +37,8 @@ namespace MUINetPlus.Core
                         linkGroup.Index = Convert.ToInt32(reader.GetAttribute("Index"));
                         linkGroup.Name = reader.GetAttribute("Name");
                         linkGroup.DisplayName = reader.GetAttribute("DisplayName");
-                        linkGroup.DefaultContentSourceName = reader.GetAttribute("DefaultContentSourceName");
-                        linkGroup.IsTitleLink = reader.GetAttribute("IsTitleLink");
+                        linkGroup.IsTitleLink = Convert.ToBoolean(reader.GetAttribute("IsTitleLink"));
+                        linkGroup.GroupKey = reader.GetAttribute("GroupKey") ?? string.Empty;
                         linkGroup.Assembly = extension.Assembly;
                         extension.ExtensionNodes.Add(linkGroup);
                         link.Setup(reader, ref linkGroup);

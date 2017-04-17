@@ -12,7 +12,7 @@ namespace FirstFloor.ModernUI.Presentation
     public class LinkGroup
         : Displayable
     {
-        private string groupName;
+        private string groupKey;
         private Link selectedLink;
         private LinkCollection links = new LinkCollection();
 
@@ -22,12 +22,13 @@ namespace FirstFloor.ModernUI.Presentation
         /// <value>The name of the group.</value>
         public string GroupKey
         {
-            get { return this.groupName; }
+            get { return this.groupKey; }
             set
             {
-                if (this.groupName != value) {
-                    this.groupName = value;
-                    OnPropertyChanged("GroupName");
+                if (this.groupKey != value)
+                {
+                    this.groupKey = value;
+                    OnPropertyChanged("GroupKey");
                 }
             }
         }
@@ -41,7 +42,8 @@ namespace FirstFloor.ModernUI.Presentation
             get { return this.selectedLink; }
             set
             {
-                if (this.selectedLink != value) {
+                if (this.selectedLink != value)
+                {
                     this.selectedLink = value;
                     OnPropertyChanged("SelectedLink");
                 }

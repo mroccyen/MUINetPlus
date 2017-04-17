@@ -13,7 +13,3 @@ E:\GitHub\MUINetPlus\Code\MUINetPlus.Startup\bin\Debug\MUINetPlus.Core.UI.pdb
 E:\GitHub\MUINetPlus\bin\MUINetPlus.Startup.exe.config
 E:\GitHub\MUINetPlus\bin\MUINetPlus.Startup.exe
 E:\GitHub\MUINetPlus\bin\MUINetPlus.Startup.pdb
-E:\GitHub\MUINetPlus\Code\MUINetPlus.Startup\obj\Debug\TestUserControl.g.cs
-E:\GitHub\MUINetPlus\Code\MUINetPlus.Startup\obj\Debug\MUINetPlus.Startup_MarkupCompile.lref
-E:\GitHub\MUINetPlus\Code\MUINetPlus.Startup\obj\Debug\TestUserControl.baml
-E:\GitHub\MUINetPlus\Code\MUINetPlus.Startup\obj\Debug\MUINetPlus.Startup.g.resources

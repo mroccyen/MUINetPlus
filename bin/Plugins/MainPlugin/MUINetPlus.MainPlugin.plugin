@@ -5,13 +5,29 @@
   </Extension>-->
 
   <Extension Type="LinkGroup"  Assembly="MUINetPlus.MainPlugin.dll">
-    <LinkGroup Name="Project" Index="1" DisplayName="项目管理" DefaultContentSourceName="0" IsTitleLink="false">
+    <LinkGroup Name="Project" Index="1" DisplayName="项目管理" >
       <Link Name="0" Index="0" DisplayName="项目设定" Source="MUINetPlus.MainPlugin.TestUserControl"></Link>
       <Link Name="1" Index="1" DisplayName="新建项目" Source="MUINetPlus.MainPlugin.TestUserControl1"></Link>
     </LinkGroup>
-    <LinkGroup Name="Debug" Index="0" DisplayName="调试管理" DefaultContentSourceName="0" IsTitleLink="false">
+    <LinkGroup Name="Debug" Index="0" DisplayName="调试管理" >
       <Link Name="0" Index="0" DisplayName="项目设定" Source="MUINetPlus.MainPlugin.TestUserControl2"></Link>
+      <Link Name="1" Index="1" DisplayName="新建项目" Source="MUINetPlus.MainPlugin.TestUserControl3"></Link>
+    </LinkGroup>
+    <LinkGroup Name="View" Index="2" DisplayName="视图管理" >
+      <Link Name="0" Index="0" DisplayName="项目设定" Source="MUINetPlus.MainPlugin.TestUserControl"></Link>
       <Link Name="1" Index="1" DisplayName="新建项目" Source="MUINetPlus.MainPlugin.TestUserControl1"></Link>
+    </LinkGroup>
+    <LinkGroup Name="View" Index="2" DisplayName="视图管理" >
+      <Link Name="0" Index="0" DisplayName="项目设定" Source="MUINetPlus.MainPlugin.TestUserControl"></Link>
+      <Link Name="1" Index="1" DisplayName="新建项目" Source="MUINetPlus.MainPlugin.TestUserControl1"></Link>
+    </LinkGroup>
+    <LinkGroup Name="File" Index="2" DisplayName="设置" GroupKey="Settings" IsTitleLink="true">
+      <Link Name="0" Index="0" DisplayName="文件设定" Source="MUINetPlus.MainPlugin.TestUserControl4"></Link>
+      <Link Name="1" Index="1" DisplayName="文件项目" Source="MUINetPlus.MainPlugin.TestUserControl5"></Link>
+    </LinkGroup>
+    <LinkGroup Name="Set" Index="1" DisplayName="颜色" GroupKey="Settings" IsTitleLink="true">
+      <Link Name="0" Index="0" DisplayName="文件设定" Source="MUINetPlus.MainPlugin.TestUserControl4"></Link>
+      <Link Name="1" Index="1" DisplayName="文件项目" Source="MUINetPlus.MainPlugin.TestUserControl5"></Link>
     </LinkGroup>
   </Extension>
 </Plugin>

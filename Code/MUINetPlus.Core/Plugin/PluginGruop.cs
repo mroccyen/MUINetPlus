@@ -28,7 +28,5 @@ namespace MUINetPlus.Core
         {
             get { return _extensionDatas; }
         }
-
-
     }
 }
