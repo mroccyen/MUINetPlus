@@ -52,7 +52,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ToolKit\FileToolkit.cs" />
     <Compile Include="ToolKit\ImageToolkit.cs" />
-    <Compile Include="ToolKit\StringToolkit.cs" />
     <Compile Include="Plugin\XmlManager.cs" />
     <Compile Include="Plugin\XmlExtension.cs" />
     <Compile Include="Plugin\XmlLinkGroup.cs" />

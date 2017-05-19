@@ -65,6 +65,12 @@
     <Compile Include="TestUserControl5.xaml.cs">
       <DependentUpon>TestUserControl5.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TestUserControl6.xaml.cs">
+      <DependentUpon>TestUserControl6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TestUserControl7.xaml.cs">
+      <DependentUpon>TestUserControl7.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="MUINetPlus.MainPlugin.plugin">
@@ -93,6 +99,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="TestUserControl5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TestUserControl6.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TestUserControl7.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -18,3 +18,7 @@ E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\TestUserControl4.g.cs
 E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\TestUserControl5.g.cs
 E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\TestUserControl4.baml
 E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\TestUserControl5.baml
+E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\TestUserControl6.g.cs
+E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\TestUserControl7.g.cs
+E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\TestUserControl6.baml
+E:\GitHub\MUINetPlus\Code\MUINetPlus.MainPlugin\obj\Debug\TestUserControl7.baml

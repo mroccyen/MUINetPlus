@@ -1,33 +1,33 @@
 ﻿<Plugin  Name="MainConfig" Author="mroccyen" Version="1.0.0" Description="" Initialized="true">
-  <!--<Extension Type="LinkPage" Assembly="bin\QYCQ.AMS.dll">
-    <LinkPage Name="LoginPage" Index="0" Value="QYCQ.AMS.LoginWindow"/>
-    <LinkPage Name="MainPage"  Index="1" Value="QYCQ.AMS.MainWindow" />
+  <!--<Extension Type="LinkPage" Assembly="MUINetPlus.MainPlugin.dll">
+    <LinkPage Name="LoginPage" Index="0" Value="LoginWindow"/>
+    <LinkPage Name="MainPage"  Index="1" Value="MainWindow" />
   </Extension>-->
 
   <Extension Type="LinkGroup"  Assembly="MUINetPlus.MainPlugin.dll">
-    <LinkGroup Name="Project" Index="1" DisplayName="项目管理" >
-      <Link Name="0" Index="0" DisplayName="项目设定" Source="MUINetPlus.MainPlugin.TestUserControl"></Link>
-      <Link Name="1" Index="1" DisplayName="新建项目" Source="MUINetPlus.MainPlugin.TestUserControl1"></Link>
+    <LinkGroup Name="Project" Index="1" DisplayName="项目" >
+      <Link Name="Setting" Index="0" DisplayName="设定" Source="MUINetPlus.MainPlugin.TestUserControl"></Link>
+      <Link Name="New" Index="1" DisplayName="新建" Source="MUINetPlus.MainPlugin.TestUserControl1"></Link>
     </LinkGroup>
-    <LinkGroup Name="Debug" Index="0" DisplayName="调试管理" >
-      <Link Name="0" Index="0" DisplayName="项目设定" Source="MUINetPlus.MainPlugin.TestUserControl2"></Link>
-      <Link Name="1" Index="1" DisplayName="新建项目" Source="MUINetPlus.MainPlugin.TestUserControl3"></Link>
+    <LinkGroup Name="Debug" Index="0" DisplayName="调试" >
+      <Link Name="Produce" Index="0" DisplayName="生成" Source="MUINetPlus.MainPlugin.TestUserControl2"></Link>
+      <Link Name="Start" Index="1" DisplayName="开始" Source="MUINetPlus.MainPlugin.TestUserControl3"></Link>
     </LinkGroup>
-    <LinkGroup Name="View" Index="2" DisplayName="视图管理" >
-      <Link Name="0" Index="0" DisplayName="项目设定" Source="MUINetPlus.MainPlugin.TestUserControl"></Link>
-      <Link Name="1" Index="1" DisplayName="新建项目" Source="MUINetPlus.MainPlugin.TestUserControl1"></Link>
+    <LinkGroup Name="View" Index="2" DisplayName="视图" >
+      <Link Name="Design" Index="0" DisplayName="设计器" Source="MUINetPlus.MainPlugin.TestUserControl6"></Link>
+      <Link Name="Property" Index="1" DisplayName="属性" Source="MUINetPlus.MainPlugin.TestUserControl7"></Link>
     </LinkGroup>
-    <LinkGroup Name="View" Index="2" DisplayName="视图管理" >
-      <Link Name="0" Index="0" DisplayName="项目设定" Source="MUINetPlus.MainPlugin.TestUserControl"></Link>
-      <Link Name="1" Index="1" DisplayName="新建项目" Source="MUINetPlus.MainPlugin.TestUserControl1"></Link>
+    <LinkGroup Name="View" Index="2" DisplayName="视图" >
+      <Link Name="Design" Index="0" DisplayName="视图1" Source="MUINetPlus.MainPlugin.TestUserControl6"></Link>
+      <Link Name="Property" Index="1" DisplayName="视图2" Source="MUINetPlus.MainPlugin.TestUserControl7"></Link>
     </LinkGroup>
-    <LinkGroup Name="File" Index="2" DisplayName="设置" GroupKey="Settings" IsTitleLink="true">
-      <Link Name="0" Index="0" DisplayName="文件设定" Source="MUINetPlus.MainPlugin.TestUserControl4"></Link>
-      <Link Name="1" Index="1" DisplayName="文件项目" Source="MUINetPlus.MainPlugin.TestUserControl5"></Link>
+    <LinkGroup Name="Set" Index="2" DisplayName="设置" GroupKey="Settings" IsTitleLink="true">
+      <Link Name="Set1" Index="0" DisplayName="设置1" Source="MUINetPlus.MainPlugin.TestUserControl4"></Link>
+      <Link Name="Set2" Index="1" DisplayName="设置2" Source="MUINetPlus.MainPlugin.TestUserControl5"></Link>
     </LinkGroup>
-    <LinkGroup Name="Set" Index="1" DisplayName="颜色" GroupKey="Settings" IsTitleLink="true">
-      <Link Name="0" Index="0" DisplayName="文件设定" Source="MUINetPlus.MainPlugin.TestUserControl4"></Link>
-      <Link Name="1" Index="1" DisplayName="文件项目" Source="MUINetPlus.MainPlugin.TestUserControl5"></Link>
+    <LinkGroup Name="Color" Index="1" DisplayName="颜色" GroupKey="Settings" IsTitleLink="true">
+      <Link Name="Color1" Index="0" DisplayName="颜色1" Source="MUINetPlus.MainPlugin.TestUserControl4"></Link>
+      <Link Name="Color2" Index="1" DisplayName="颜色2" Source="MUINetPlus.MainPlugin.TestUserControl5"></Link>
     </LinkGroup>
   </Extension>
 </Plugin>

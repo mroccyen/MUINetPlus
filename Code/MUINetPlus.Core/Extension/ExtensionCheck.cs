@@ -10,7 +10,7 @@ namespace MUINetPlus.Core
     {
         public static T LinkGroupExistValue<T>(ExtensionData extensionData, Func<ExtensionChildData, bool> funcWhere) where T : ExtensionChildData
         {
-            T result = null; ;
+            T result = null;
             var existNodes = extensionData.ExtensionNodes.Where(funcWhere);
             if (existNodes.Count() > 0)
             {
